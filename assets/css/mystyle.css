@@ -1,0 +1,160 @@
+.navbar{
+	background-image: url('../img/header-background.jpg') !important;
+	height: 120px;
+
+}
+
+.projects {
+	background-color:#13656d57;
+	
+	
+}
+
+.footer {
+	background-color:#13656d57;
+}
+
+.copyright {
+	padding-top: 50px !important;
+}
+
+.card {
+	box-shadow: 2px 5px 5px white !important;
+	background-size: cover;
+	background-position:center;
+	overflow: hidden;
+	transition: all 1s; 
+	background-color: #33cc33;
+
+	animation-name: card;
+   animation-duration: 2s;
+    
+}
+#projects:active {
+   animation-name: card;
+   animation-duration: 2s;
+}
+
+#projects h4, #projects p {
+	margin:-2px;
+}
+
+.card:hover {
+	transform: scale(1.1) !important;
+
+
+	}
+
+
+#employment {
+	background-image: url(../img/template/nab.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+#employment h3 {
+	color: #6809e2eb;
+	font-weight: bold;
+}
+
+#employment h4 {
+	color: #6809e2eb;
+}
+
+
+#employment ul li {
+  line-height: 30px;
+  font-size:20px;
+  font-style: italic;
+
+}
+
+.job {
+	background-color: #add6e6db;
+	width: 95%;
+	border-radius: 10px;
+	padding:50px;
+	margin-top: 50px;
+	
+
+}
+
+.job img {
+	width: 400px;
+	float:right;
+
+}
+
+#skills {
+	text-align: center;
+	background-color: black;
+	color:#2ca8ff;
+	margin: -50px 0 -30px 0!important;
+	height: 200px;
+
+}
+
+.project-image {
+	width: 120%;
+	margin-left: -30px;
+	padding:10px 0;
+}
+
+.text span,.text span a{
+	color: white;
+}
+
+#about {
+animation-name: about;
+animation-duration: 2s;
+}
+
+@keyframes about {
+	0%{
+		transform: translateX(500px);
+	}
+    80%{
+    	transform: translateX(-10px);
+    }
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@keyframes card {
+	0%{
+		transform: translateY(50px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+  .phone {
+    display: none;
+  }
+  #about{
+  	margin-top: 100px;
+  }
+
+  .navbar {
+  	height: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+   .navbar{
+  	position: relative;
+  	margin-bottom: -10px;
+  }
+
+  #education img{
+  	display: none;
+  }
+
+}
