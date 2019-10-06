@@ -35,9 +35,6 @@
    animation-duration: 2s;
 }
 
-#projects h4, #projects p {
-	margin:-2px;
-}
 
 .card:hover {
 	transform: scale(1.1) !important;
